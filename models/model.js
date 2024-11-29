@@ -14,7 +14,6 @@ class DataModel {
     try {
       switch (source) {
         case "tonitrus":
-          console.log("ProductTonitrus")
           const productTonitrus = await ProductTonitrus.create({ name, source });
           const imagesTonitrus = imageUrls.map((url) => ({
             link: url,
@@ -23,7 +22,6 @@ class DataModel {
           await ImageTonitrus.bulkCreate(imagesTonitrus);
           break;
         case "cablesandkits":
-          console.log("ProductCable")
           const productCable = await ProductCable.create({ name, source });
           const imagesCable = imageUrls.map((url) => ({
             link: url,

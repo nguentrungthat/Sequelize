@@ -18,6 +18,9 @@ Product.init(
     source: {
       type: DataTypes.STRING,
     },
+    description: {
+      type: DataTypes.TEXT,
+    },
   },
   { sequelize: sequelizeTonitrus, modelName: "product" }
 );
@@ -36,6 +39,9 @@ ProductCable.init(
     },
     source: {
       type: DataTypes.STRING,
+    },
+    description: {
+      type: DataTypes.TEXT,
     },
   },
   { sequelize: sequelizeCable, modelName: "product" }

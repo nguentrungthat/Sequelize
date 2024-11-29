@@ -1,0 +1,7 @@
+-- Create file migration with path
+npx sequelize-cli migration:generate --name add-column-to-product --migrations-path migrations/tonitrus
+npx sequelize-cli migration:generate --name add-column-to-product --migrations-path migrations/cable
+
+--Run migrate with path config
+npx sequelize-cli db:migrate --config config/tonitrus.config.json --migrations-path migrations/tonitrus
+npx sequelize-cli db:migrate --config config/cable.config.json --migrations-path migrations/cable
