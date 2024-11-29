@@ -1,0 +1,26 @@
+{
+  "name": "Prisma",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "tonitrus": "node index.js tonitrus.com http://localhost:9222",
+    "capbleandkit": "node index.js cablesandkits.com http://localhost:9222"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  },
+  "dependencies": {
+    "puppeteer": "^23.9.0",
+    "robotjs": "^0.6.0",
+    "sequelize": "^6.37.5",
+    "sequelize-cli": "^6.6.2",
+    "sqlite3": "^5.1.7"
+  }
+}
